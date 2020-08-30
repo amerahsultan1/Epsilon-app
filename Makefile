@@ -32,16 +32,16 @@ jenkins-down:
 elf: elf-clone elf-up elf-test elf-tidy
 
 elf-clone:
-	git clone https://github.com/KnowledgeHut-AWS/elf
+	git clone https://github.com/amerahsultan1/epsilon-elf
 
 elf-up:
-	cd elf && ./elf.sh
+	cd epsilon-elf && ./elf.sh
 
 elf-test:
 	curl localhost/elf
 
 elf-tidy:
-	rm -rf elf
+	rm -rf epsilon-elf
 
 elf-down:
 	helm uninstall elasticsearch --namespace=elf
@@ -52,16 +52,16 @@ elf-down:
 pro-graf: pro-graf-clone pro-graf-up pro-graf-test pro-graf-tidy
 
 pro-graf-clone:
-	git clone https://github.com/KnowledgeHut-AWS/pro-graf
+	git clone https://github.com/amerahsultan1/epsilon-pro-graf
 
 pro-graf-up:
-	cd pro-graf && ./pro-graf.sh
+	cd epsilon-pro-graf && ./pro-graf.sh
 
 pro-graf-test:
 	curl localhost/grafana
 
 pro-graf-tidy:
-	rm -rf pro-graf
+	rm -rf epsilon-pro-graf
 
 pro-graf-down:
 	helm uninstall prometheus-operator -n monitor
