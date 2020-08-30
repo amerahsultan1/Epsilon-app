@@ -18,16 +18,16 @@ jenkins-clone:
 	git clone https://github.com/amerahsultan1/k8s-jenkins-epsilon.git
 
 jenkins-up:
-	cd k8s-jenkins && ./jenkins.sh
+	cd k8s-jenkins-epsilon && ./jenkins.sh
 
 jenkins-test:
 	curl -L localhost/jenkins
 
 jenkins-tidy:
-	rm -rf k8s-jenkins
+	rm -rf k8s-jenkins-epsilon
 
 jenkins-down:
-	cd k8s-jenkins && kubectl delete jenkins.helm.yaml
+	cd k8s-jenkins-epsilon && kubectl delete jenkins.helm.yaml
 
 elf: elf-clone elf-up elf-test elf-tidy
 
