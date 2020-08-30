@@ -3,7 +3,7 @@ deploy: elf pro-graf jenkins
 up: cluster up
 
 cluster:
-	k3d cluster create labs \
+	k3d cluster create epsilon \
 	    -p 80:80@loadbalancer \
 	    -p 443:443@loadbalancer \
 	    -p 30000-32767:30000-32767@server[0] \
