@@ -15,7 +15,7 @@ cluster:
 jenkins: jenkins-clone jenkins-up jenkins-test jenkins-tidy
 
 jenkins-clone:
-	git clone https://github.com/amerahsultan1/k8s-jenkins-epsilon.git
+	git clone https://github.com/amerahsultan1/k8s-jenkins-epsilon
 
 jenkins-up:
 	cd k8s-jenkins-epsilon && ./jenkins.sh
@@ -32,7 +32,7 @@ jenkins-down:
 elf: elf-clone elf-up elf-test elf-tidy
 
 elf-clone:
-	git clone https://github.com/KnowledgeHut-AWS/elf.git
+	git clone https://github.com/KnowledgeHut-AWS/elf
 
 elf-up:
 	cd elf && ./elf.sh
